@@ -22,8 +22,6 @@ As a general-purpose language, Python can be used a variety of settings. Python 
 *	www.python.org/ has all of the Python documentation along with helpful tools like a tutorial as well as a list of books and essays (free resources)
     - Specifically, the [Python Language Reference](https://docs.python.org/3/reference/index.html)
 * [Effective Python](https://effectivepython.com/)
-* Stack Exchange can be a good resource, but I will use it with caution because there is no quality control
-* Office hours!
 
 ### Sources
 * GeeksforGeeks.org https://www.geeksforgeeks.org/internal-working-of-python/#:~:text=Python%20is%20called%20an%20interpreted%20language.&text=So%20we%20need%20actually%20an,a%20python%20code%20or%20instruction Accessed September 7, 2020.
