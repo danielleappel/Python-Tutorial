@@ -1,5 +1,5 @@
 # Control Flow
-*Code for this lesson can be found at [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py), and extra examples of control structures can also be found at [`control_flow_perf_num.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py) and [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py).*
+*Code for this lesson can be found at [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py), and extra examples of control structures can also be found at [`control_flow_perfect_num.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py) and [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py).*
 
 As RealPython.com says, control flow "directs the order and execution of statements in the program." The structure of a general Python block:
 
@@ -476,9 +476,9 @@ I have written a number of other codes in this repository, called [`control_flow
         >...
 If a Python document has no functions, (like the code in [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py) ), it runs  mostly sequentially; top to bottom, executing each block (the only exceptions to the sequential flow is when the loops run). 
 
-On the other hand, the code in [`control_flow_perf_numb.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow_perf_num.py) executes the loop in the `main()` function first, and then calls the `is_perfect()` function on the natural numbers from 1 to 500.
+On the other hand, the code in [`control_flow_perfect_numb.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py) executes the loop in the `main()` function first, and then calls the `is_perfect()` function on the natural numbers from 1 to 500.
 
-The code in [`control_flow_guessing_game.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow_guessing_game.py) uses loops and conditionals to host a simple guessing game. It even uses time delays with the code `time.sleep(0.5)` (but they only make it run more smoothly, they do not change the functionality). It also utilizes another Python feature: `try`/`except` statements which allow you to try something that might cause an error. If it does cause an error, then you can use a while loop to continue asking for input until the user enters the type of input you want.
+The code in [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py) uses loops and conditionals to host a simple guessing game. It even uses time delays with the code `time.sleep(0.5)` (but they only make it run more smoothly, they do not change the functionality). It also utilizes another Python feature: `try`/`except` statements which allow you to try something that might cause an error. If it does cause an error, then you can use a while loop to continue asking for input until the user enters the type of input you want.
 
 # Sources
 - Book.pythontips.com https://book.pythontips.com/en/latest/ternary_operators.html Accessed October 2, 2020.
