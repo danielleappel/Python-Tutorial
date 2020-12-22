@@ -17,7 +17,7 @@ How to call a function:
 - The function can **return** any type of object, or it might not. Unlike Java, Python is not required to return anything. If it does return something, you can set a variable equal to the result of the function call. If there is nothing returned, then `something` would equal `None` which is perfectly legal in Python.
     - Return statements always end a function.
 
-For example, consider this code in [`functions_and_parameters.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/functions_and_parameters.py):
+For example, consider this code in [`functions_and_parameters.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/functions_and_parameters.py):
 
     >def multiply(a, b):
         >return a * b
@@ -132,7 +132,7 @@ Python also supports a `**` operator that is very similar to the `*` operator. T
 
 ## Recursive functions
 
-Python supports recursive functions. Consider the simple recursive function to calculate the factorial of a given number, which can be found in [`functions_and_parameters.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/functions_and_parameters.py)
+Python supports recursive functions. Consider the simple recursive function to calculate the factorial of a given number, which can be found in [`functions_and_parameters.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/functions_and_parameters.py)
 
     >def factorial(n):
         >if  n == 1:
@@ -185,7 +185,7 @@ A useful attribute of Python is that a function can return more than one value. 
         >return thing1, thing2, ...
 It's simple enough, just seperate the different returns with commas. Consider the example below:
 
-The following code in [`functions_and_parameters.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/functions_and_parameters.py) takes a string and splits it in half by indexing it like an array, then returns both halves. The subsequent call in `main()` is also shown
+The following code in [`functions_and_parameters.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/functions_and_parameters.py) takes a string and splits it in half by indexing it like an array, then returns both halves. The subsequent call in `main()` is also shown
 
     >def string_split(s):
         >midpoint = len(s)//2
@@ -209,7 +209,7 @@ The section with string `s`, assigns the two returned strings into two variables
 Lambda expressions, often called anonymous functions, are a more compact version of functions than those listed above, using just the keyword `lambda`. These functions can include any number of arguments and a single expression to perform. The general form is
 
     >lambda argument1, argument2, ... : expression
-Consider this example in [`functions_and_parameters.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/functions_and_parameters.py) that uses a lamda expression to create a multiply function
+Consider this example in [`functions_and_parameters.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/functions_and_parameters.py) that uses a lamda expression to create a multiply function
 
     >def make_multiplier(n):
         >return lambda x: x * n
@@ -244,7 +244,7 @@ This code has `x` point at an object that holds 42. Then `x` is unbound and rebo
 ### Back to pass-by type
 A reference in Python behaves differently in Python than other languages. It does not point to a specific memory location, but rather, to an object.
 
-Python sometimes behaves like a *pass-by reference* language. A list of numbers can have elements swapped, like this code in [`functions_and_parameters.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/functions_and_parameters.py):
+Python sometimes behaves like a *pass-by reference* language. A list of numbers can have elements swapped, like this code in [`functions_and_parameters.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/functions_and_parameters.py):
 
     >def swap(A, i, j):
         >temp = A[i]
@@ -303,7 +303,7 @@ Python functions have their own form of comments to describe each function. Whil
         >"""
 There is a description of the function, followed by an intentionally blank line (if there is more to describe, otherwise the docstring can be just a single line) to seperate the high level description and the other information about the function. 
 
-Docstrings are useful for people who are unfamiliar with your code. For instance, you can run a `help` command to understand the `multiply()` function in [`functions_and_parameters.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/functions_and_parameters.py)
+Docstrings are useful for people who are unfamiliar with your code. For instance, you can run a `help` command to understand the `multiply()` function in [`functions_and_parameters.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/functions_and_parameters.py)
 
     >help(multiply)
 
