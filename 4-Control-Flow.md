@@ -89,7 +89,7 @@ It prints
     It's November
     It's still November
     It's really still November
-Since `month$=\=$12$`, none of the print statements after it are executed. Instead, since `month==11`, all three November print statements are executed. The general form of this statement is
+Since `month` is not equal to 12, none of the print statements after it are executed. Instead, since `month==11`, all three November print statements are executed. The general form of this statement is
 
     >if boolean_statement: statement1; statement2; statement3
     >else: statement4; statement5; statement6
@@ -97,6 +97,7 @@ If the `boolean_statement` is true, all `statement1`, `statement2`, and `stateme
 
 ## Multi-condition if/elif/else statement
 We can add requirements from the lottery example above. All winners must be 18 years of age or older:
+
     >lotter_ticket == 10
     >age = 14
     >if lottery_ticket == 10 and age >= 18:
@@ -136,7 +137,7 @@ Since this uses an `or` statement, if the first condition is true, then the seco
     You win! (and thankfully didn't divide by zero!)
 If `age == 23` (or any other number), the expression `1/0` will be evaluated, which would cause an error.
 
-We can play the same game with `and` statements. If the first condition is false, then the whole thing must be false. So as long as `age=\=16`, there will be no error
+We can play the same game with `and` statements. If the first condition is false, then the whole thing must be false. So as long as `age` is not equal to 16, there will be no error
 
     >if age == 16 and 1/0 == 2345:
         >print("You win! (but actually, this is impossible.)\n")
