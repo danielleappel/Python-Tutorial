@@ -163,17 +163,17 @@ To understand what this code is doing, use the table below
 | 2 | return 4 * 3 * 2 * factorial(2) |
 | 1 | return 4 * 3 * 2 * 1            |
 
-For a more advanced recursive example, consider the code in [`fern_recursive.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/fern_recursive.py). It uses matrices from the package `numpy` to recursively generate the `(x,y)` coordinates of a fern. It also uses plotting tools from the `matplotlib` package that works like MATLAB. The fern generator also uses a "wrapper" function to begin the recursive function. An image of what it plots can be found here: [`fern_recursive.png`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_recursive.png) and below:
+For a more advanced recursive example, consider the code in [`fern_recursive.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/fern_recursive.py). It uses matrices from the package `numpy` to recursively generate the `(x,y)` coordinates of a fern. It also uses plotting tools from the `matplotlib` package that works like MATLAB. The fern generator also uses a "wrapper" function to begin the recursive function. An image of what it plots can be found here: [`fern_recursive.png`](https://github.com/danielleappel/Python-Tutorial/blob/main/Images/fern_recursive.png) and below:
 
-![Recursive Fern Fractal](./fern_recursive.png)
+![Recursive Fern Fractal](https://github.com/danielleappel/Python-Tutorial/blob/main/Images/fern_recursive.png)
 
 Try changing the value of `n`; it determines the number of dots plotted. As the value of `n` decreases, the code will run quickly and the graph will be more sparse. If the value increases, the code will take longer to run, but the graph will be denser. Make sure not to make `n` too big! Python has a limit of 1000 on how many times a function can be recrusively called and thus put on the call stack. If you make `n` greater than 1000, it will crash because there are more stack frames than the default stack depth.
 
 To get around this, we could certainly use the package `sys` to increase the recursion limit, but that does not address the root of the problem: Python does not support *tail call optimization*. Tail call elimination is designed to speed up recursion by allowing tail calls that eliminate the need to put a new stack frame on the call stack for each recursive call.
 
-How can we make this function run for larger values of `n` without tail call optimization? The answer is to abandon recursion, and produce the much cleaner, iterative version of this code, which can be found here: [`fern_iterative.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/fern_iterative.py), and its corresponding image here: [`fern_iterative.png`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_iterative.png) and below:
+How can we make this function run for larger values of `n` without tail call optimization? The answer is to abandon recursion, and produce the much cleaner, iterative version of this code, which can be found here: [`fern_iterative.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/fern_iterative.py), and its corresponding image here: [`fern_iterative.png`](https://github.com/danielleappel/Python-Tutorial/blob/main/Images/fern_iterative.png) and below:
 
-![Iterative Fern Fractal](./fern_iterative.png)
+![Iterative Fern Fractal](https://github.com/danielleappel/Python-Tutorial/blob/main/Images/fern_iterative.png)
 
 ## Multiple return statements
 A useful attribute of Python is that a function can return more than one value. The general form of this is
