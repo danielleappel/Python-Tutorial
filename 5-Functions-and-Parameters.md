@@ -163,7 +163,7 @@ To understand what this code is doing, use the table below
 | 2 | return 4 * 3 * 2 * factorial(2) |
 | 1 | return 4 * 3 * 2 * 1            |
 
-For a more advanced recursive example, consider the code in [`fern_recursive.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_recursive.py). It uses matrices from the package `numpy` to recursively generate the `(x,y)` coordinates of a fern. It also uses plotting tools from the `matplotlib` package that works like MATLAB. The fern generator also uses a "wrapper" function to begin the recursive function. An image of what it plots can be found here: [`fern_recursive.png`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_recursive.png) and below:
+For a more advanced recursive example, consider the code in [`fern_recursive.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/fern_recursive.py). It uses matrices from the package `numpy` to recursively generate the `(x,y)` coordinates of a fern. It also uses plotting tools from the `matplotlib` package that works like MATLAB. The fern generator also uses a "wrapper" function to begin the recursive function. An image of what it plots can be found here: [`fern_recursive.png`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_recursive.png) and below:
 
 ![Recursive Fern Fractal](./fern_recursive.png)
 
@@ -171,7 +171,7 @@ Try changing the value of `n`; it determines the number of dots plotted. As the 
 
 To get around this, we could certainly use the package `sys` to increase the recursion limit, but that does not address the root of the problem: Python does not support *tail call optimization*. Tail call elimination is designed to speed up recursion by allowing tail calls that eliminate the need to put a new stack frame on the call stack for each recursive call.
 
-How can we make this function run for larger values of `n` without tail call optimization? The answer is to abandon recursion, and produce the much cleaner, iterative version of this code, which can be found here: [`fern_iterative.py`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_iterative.py), and its corresponding image here: [`fern_iterative.png`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_iterative.png) and below:
+How can we make this function run for larger values of `n` without tail call optimization? The answer is to abandon recursion, and produce the much cleaner, iterative version of this code, which can be found here: [`fern_iterative.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/fern_iterative.py), and its corresponding image here: [`fern_iterative.png`](https://github.com/danielleappel/PLP/blob/master/PLP5/fern_iterative.png) and below:
 
 ![Iterative Fern Fractal](./fern_iterative.png)
 
