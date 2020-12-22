@@ -1,6 +1,6 @@
 # Naming conventions and data types
 
-Code for this section is provided in `data_types.py`.
+Code for this section is provided in [`data_types.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/data_types.py) in the Code folder.
 
 ## But first, a quick note on conventions
 While the following rules and conventions usually leads to better code (as in more readable and easier to debug), they are not all fast and steady rules. Furthermore, not everyone follows these conventions, but they are a good place to start.
@@ -32,7 +32,7 @@ Python does not require code to declare the type of a variable, so writing code 
 
 Python is also ***strongly typed*** because the interpreter keeps track of all of the variable types in code. It prevents you from doing something like adding a string to a number because there is no definition for that operator. The benefit of a strongly typed language is that it provides error messages so that the coder can realize that they are performing undefined operations on their variables.
 
-Consider the code in `data_types.py` as an example of the dynamic aspects of Python
+Consider the code in [`data_types.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/data_types.py) as an example of the dynamic aspects of Python
 
     >x=7
     >print("\n",x)
@@ -44,7 +44,7 @@ Above, `x` starts as an integer, and is then reassigned to a string. This code o
       7
       rain
 ### Integers
-Consider this excerpt from `data_types.py`
+Consider this excerpt from [`data_types.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/data_types.py)
 
       >fall_goals = 14
       >spring_goals = 19
