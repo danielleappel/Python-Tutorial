@@ -1,5 +1,5 @@
 # Control Flow
-*Code for this lesson can be found at [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py), and extra examples of control structures can also be found at [`control_flow_perf_numb.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow_perf_num.py) and [`control_flow_guessing_game.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow_guessing_game.py).*
+*Code for this lesson can be found at [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py), and extra examples of control structures can also be found at [`control_flow_perf_num.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py) and [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py).*
 
 As RealPython.com says, control flow "directs the order and execution of statements in the program." The structure of a general Python block:
 
@@ -468,7 +468,7 @@ The benefit of using a pass statement can be most readily seen in this broken co
 This code cannot be run because it has no statement after the `if`. It is commented out in [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py) because it results in an error. However, if you add a `pass` (but don't use a `continue` loop here or you'll get an infinite loop because `x` would never be decremented) after the `if` line, this code will run perfectly.
 
 # More examples
-I have written a number of other codes in this repository, called [`control_flow_guessing_game.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow_guessing_game.py) and [`control_flow_perf_num.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow_perf_num.py). Check them out! They also play with the control structures of functions in Python. The general structure of a function is
+I have written a number of other codes in this repository, called [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py) and [`control_flow_perfect_num.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py). Check them out! They also play with the control structures of functions in Python. The general structure of a function is
 
     >def function_name( input1, input2, ... ):
         >statement1
