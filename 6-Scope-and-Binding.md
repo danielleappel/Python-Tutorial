@@ -183,7 +183,7 @@ Consider a third variation of the `double()` code:
 In `double_wrapper_nonlocal()`, a local variable `n = 35` is declared before calling the nested function `double_nonlocal()`. By declaring `n` to be a nonlocal variable in the inner function `double_nonlocal()`, it can point to the same value of 35 as declared in the outer function. We can even change the value of `n` in both the inner function `double_nonlocal()`, and the wrapper `double_wrapper_nonlocal()` to be 70 since they point to the same object.
 
 ## Assignment
-As discussed in [PLP5-Functions_and_Parameters.md](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py), Python passes mutable objects (like lists) by reference and immutable objects (like ints, strings, and tuples) by value. The difference between the two can be seen in two similar examples: one with a list, and one with a tuple.
+As discussed in [5-Functions_and_Parameters.md](https://github.com/danielleappel/Python-Tutorial/blob/main/5-Functions_and_Parameters.md), Python passes mutable objects (like lists) by reference and immutable objects (like ints, strings, and tuples) by value. The difference between the two can be seen in two similar examples: one with a list, and one with a tuple.
 
 ### With a list
 Consider the following code and its output in `main()` in [scope_binding.py](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py)
