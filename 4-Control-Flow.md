@@ -50,10 +50,10 @@ This outputs:
     Done with the if, even if Jessica isn't in the list, this statement will print.
 This `if` statement also differs from the previous because it has no `else` clause. An `else` clause is not required in Python, so this is a perfectly legal conditional statement. The second print statement (after the conditional statement is *over*) will execute whether Jessica is registered or not.
 
-We can also make other changes, like negating the a Boolean value with the `~`. This can make code more readable. Consider a restaurant with a fixed capacity. If it is not at capacity, then we can seat new customers:
+We can also make other changes, like negating the a Boolean value with the keyword `not` or bitwise negation with the `~` operator. This can make code more readable. Consider a restaurant with a fixed capacity. If it is not at capacity, then we can seat new customers:
 
     >at_capacity = False
-    >if ~ at_capacity: print("We can seat you now.\n")
+    >if not at_capacity: print("We can seat you now.\n")
 This prints
 
     We can seat you now.
