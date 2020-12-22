@@ -2,7 +2,7 @@
 
 ## Using the same name
 ### In a for-loop
-Consider the following code and its output in [scope_binding.py](https://github.com/danielleappel/PLP/blob/master/PLP6/scope_binding.py)
+Consider the following code and its output in [scope_binding.py](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py)
 
     >def main():
         >x = 7
@@ -25,7 +25,7 @@ Consider the following code and its output in [scope_binding.py](https://github.
     x after the for loop is 9
 The first thing to happen in `main()` is an assignment of the variable `x` to the integer value 7. Then the value of `x` is reassigned to the values 0 through 9 sequentially as the loop progresses. Since 9 is that last value assigned to `x` in the loop, it is the new value of `x` even after the loop terminates. In short, we successfully updated the value of `x` from within a for loop.
 
-Similarly, this next code excerpt also in [scope_binding.py](https://github.com/danielleappel/PLP/blob/master/PLP6/scope_binding.py) reassignes the value of `sum` throughout a loop
+Similarly, this next code excerpt also in [scope_binding.py](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py) reassignes the value of `sum` throughout a loop
 
     >def main():
         >sum = 0
@@ -51,7 +51,7 @@ And the output is
 Again, we successfully edited the value of `sum` from within a for loop.
 
 ### In a function
-Consider this `square()` function and the code that calls it in `main()` in [scope_binding.py](https://github.com/danielleappel/PLP/blob/master/PLP6/scope_binding.py)
+Consider this `square()` function and the code that calls it in `main()` in [scope_binding.py](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py)
 
     >def square(n):
         >x = n * n
@@ -82,7 +82,7 @@ Essentially, changing a variable (as long as it does not contain the word `globa
 ## Globally accessible variables
 Unlike some coding languages, in functions, Python assigns the default variable type as local, unless otherwise specified by the `global` or `nonlocal` keywords. This is to mitigate *side effects* since changes to local variables within a function or loop will not affect the variables in the rest of the program.
 
-On the other hand, if a variable is declared outside of a function (like the line `z = 4` at the top of [scope_binding.py](https://github.com/danielleappel/PLP/blob/master/PLP6/scope_binding.py)), then it is automatically a `global` variable.
+On the other hand, if a variable is declared outside of a function (like the line `z = 4` at the top of [scope_binding.py](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py)), then it is automatically a `global` variable.
 
 To illustrate how this actually works, consider the following code and its output
 
@@ -155,7 +155,7 @@ And it outputs
     (3)   nested global m after doubling is 84
     (4) local m after doubling is 10
     (5) global m after double_wrapper_global() is 84
-There are three scopes in the call to `double_wrapper_global()`: the scope of `main()`, `double_wrapper_global()`, and `double_global()`. In `double_wrapper_global()`, a local variable `m = 10` is created. This explains the output of line (1) above. When `double_global()` is called, it binds `m` to the global variable `m = 42` that is declared at the top of [scope_binding.py](https://github.com/danielleappel/PLP/blob/master/PLP6/scope_binding.py), resulting in line (2) above. The value of `m` in `double_global()` is then doubled to equal 84. Any other variables referencing the global `m` will also now be equal to 84. That's where the two outputs of 84 in line (3) and (5) come from. Line (4), on the other hand, reflects the value of `m` that is in the scope of `double_wrapper_global()` - it only has a copy of the local variable `m` which equals 10 here. Therefore, the local `m` is unchanged.
+There are three scopes in the call to `double_wrapper_global()`: the scope of `main()`, `double_wrapper_global()`, and `double_global()`. In `double_wrapper_global()`, a local variable `m = 10` is created. This explains the output of line (1) above. When `double_global()` is called, it binds `m` to the global variable `m = 42` that is declared at the top of [scope_binding.py](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py), resulting in line (2) above. The value of `m` in `double_global()` is then doubled to equal 84. Any other variables referencing the global `m` will also now be equal to 84. That's where the two outputs of 84 in line (3) and (5) come from. Line (4), on the other hand, reflects the value of `m` that is in the scope of `double_wrapper_global()` - it only has a copy of the local variable `m` which equals 10 here. Therefore, the local `m` is unchanged.
 
 ## Non-local variables
 As a parallel to global type, Python also supports non-local variables inside of nested functions. It's similar to the global type since it allows you to access variables outside of their normal scope, but its access more limited. The `nonlocal` keyword causes the respective variable to be bound to a previously bound variable in the closest proceeding scope (excluding global variables). 
@@ -183,10 +183,10 @@ Consider a third variation of the `double()` code:
 In `double_wrapper_nonlocal()`, a local variable `n = 35` is declared before calling the nested function `double_nonlocal()`. By declaring `n` to be a nonlocal variable in the inner function `double_nonlocal()`, it can point to the same value of 35 as declared in the outer function. We can even change the value of `n` in both the inner function `double_nonlocal()`, and the wrapper `double_wrapper_nonlocal()` to be 70 since they point to the same object.
 
 ## Assignment
-As discussed in [PLP5-Functions_and_Parameters.md](https://github.com/danielleappel/PLP/blob/master/PLP5/PLP5-Functions_and_Parameters.md), Python passes mutable objects (like lists) by reference and immutable objects (like ints, strings, and tuples) by value. The difference between the two can be seen in two similar examples: one with a list, and one with a tuple.
+As discussed in [PLP5-Functions_and_Parameters.md](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py), Python passes mutable objects (like lists) by reference and immutable objects (like ints, strings, and tuples) by value. The difference between the two can be seen in two similar examples: one with a list, and one with a tuple.
 
 ### With a list
-Consider the following code and its output in `main()` in [scope_binding.py](https://github.com/danielleappel/PLP/blob/master/PLP6/scope_binding.py)
+Consider the following code and its output in `main()` in [scope_binding.py](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/scope_and_binding.py)
 
     >a = ["c","a","t"]
     >b = ["d","o","g"]
