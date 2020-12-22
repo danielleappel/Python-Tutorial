@@ -1,5 +1,5 @@
 # Control Flow
-*Code for this lesson can be found at [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py), and extra examples of control structures can also be found at [`control_flow_perfect_num.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py) and [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py).*
+*Code for this lesson can be found at [`control_flow.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow.py), and extra examples of control structures can also be found at [`control_flow_perfect_num.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py) and [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py).*
 
 As RealPython.com says, control flow "directs the order and execution of statements in the program." The structure of a general Python block:
 
@@ -10,7 +10,7 @@ As RealPython.com says, control flow "directs the order and execution of stateme
     >next code...
 The block commands dictates how and when the statements are run, and come in several flavors. We can have conditionals (if/else, switches), loops (for, while), and functions. Python decides when a block is finished by comparing whitespace (tabs). If the next line has less indentation, the statement/block is ended. In this case, the line with `next code...` is less indentented than the previous line, so Python knows only to start the `next code...` once all of the indented statements are executed and the block statement is over.
 
-The code used in this post is in [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py). Try downloading the code and changing pieces of the code to better understand the structure.
+The code used in this post is in [`control_flow.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow.py). Try downloading the code and changing pieces of the code to better understand the structure.
 
 # Conditionals
 The most general structure of a conditional block is
@@ -260,7 +260,7 @@ On the other hand, what will the result of this code be?
     >while num_buckets >= 0:
         >num_buckets += 1    
     >print("There are %d buckets left\n" % num_buckets)
-This code will actually never stop running. It is an *infinite loop*. It starts when `buckets = 0`, and enters the `while` loop. It is then incremented, and thus will always be greater than or equal to 0. This code is commented out in [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py) so as to allow the rest of the code to run, but try running it and see what happens!
+This code will actually never stop running. It is an *infinite loop*. It starts when `buckets = 0`, and enters the `while` loop. It is then incremented, and thus will always be greater than or equal to 0. This code is commented out in [`control_flow.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow.py) so as to allow the rest of the code to run, but try running it and see what happens!
 
 ## For loops
 Many languages, like Perl and Java offer two seperate commands: `for` and `foreach`. Python, offers the functionality of both commands with just the keyword `for`.
@@ -465,7 +465,7 @@ The benefit of using a pass statement can be most readily seen in this broken co
             >sum_of_evens += x
         >x -= 1
     >print("\nThe sum of even numbers less than or equal to 15 is:", sum_of_evens)
-This code cannot be run because it has no statement after the `if`. It is commented out in [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py) because it results in an error. However, if you add a `pass` (but don't use a `continue` loop here or you'll get an infinite loop because `x` would never be decremented) after the `if` line, this code will run perfectly.
+This code cannot be run because it has no statement after the `if`. It is commented out in [`control_flow.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow.py) because it results in an error. However, if you add a `pass` (but don't use a `continue` loop here or you'll get an infinite loop because `x` would never be decremented) after the `if` line, this code will run perfectly.
 
 # More examples
 I have written a number of other codes in this repository, called [`control_flow_guessing_game.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_guessing_game.py) and [`control_flow_perfect_num.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py). Check them out! They also play with the control structures of functions in Python. The general structure of a function is
@@ -474,7 +474,7 @@ I have written a number of other codes in this repository, called [`control_flow
         >statement1
         >statement2
         >...
-If a Python document has no functions, (like the code in [`control_flow.py`](https://github.com/danielleappel/PLP/blob/master/PLP4/control_flow.py) ), it runs  mostly sequentially; top to bottom, executing each block (the only exceptions to the sequential flow is when the loops run). 
+If a Python document has no functions, (like the code in [`control_flow.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow.py) ), it runs  mostly sequentially; top to bottom, executing each block (the only exceptions to the sequential flow is when the loops run). 
 
 On the other hand, the code in [`control_flow_perfect_numb.py`](https://github.com/danielleappel/Python-Tutorial/blob/main/Code/control_flow_perfect_num.py) executes the loop in the `main()` function first, and then calls the `is_perfect()` function on the natural numbers from 1 to 500.
 
